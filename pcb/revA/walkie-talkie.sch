@@ -924,8 +924,8 @@ $Comp
 L Device:C C24
 U 1 1 5EBE83BC
 P 4250 3350
-F 0 "C24" V 4502 3350 50  0000 C CNN
-F 1 "4.7" V 4411 3350 50  0000 C CNN
+F 0 "C24" V 4500 3250 50  0000 C CNN
+F 1 "18" V 4400 3250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4288 3200 50  0001 C CNN
 F 3 "~" H 4250 3350 50  0001 C CNN
 	1    4250 3350
@@ -2201,7 +2201,7 @@ $EndComp
 Wire Wire Line
 	8000 3000 8000 2600
 Wire Wire Line
-	8000 3000 9000 3000
+	8000 3000 8950 3000
 $Comp
 L Device:R R13
 U 1 1 5F54BE90
@@ -3113,4 +3113,37 @@ Wire Wire Line
 Wire Wire Line
 	10400 700  9900 700 
 Connection ~ 9900 700 
+$Comp
+L Device:R R38
+U 1 1 5EBB265F
+P 9400 3250
+F 0 "R38" V 9300 3150 50  0000 C CNN
+F 1 "150k" V 9300 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9330 3250 50  0001 C CNN
+F 3 "~" H 9400 3250 50  0001 C CNN
+	1    9400 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9250 3250 8950 3250
+Wire Wire Line
+	8950 3250 8950 3000
+Connection ~ 8950 3000
+Wire Wire Line
+	8950 3000 9000 3000
+Wire Wire Line
+	9550 3250 9800 3250
+Wire Wire Line
+	9800 3250 9800 3000
+Connection ~ 9800 3000
+Wire Notes Line
+	9200 3100 9650 3100
+Wire Notes Line
+	9650 3100 9650 3300
+Wire Notes Line
+	9650 3300 9200 3300
+Wire Notes Line
+	9200 3300 9200 3100
+Text Notes 8650 3200 0    50   ~ 0
+missing part*
 $EndSCHEMATC
